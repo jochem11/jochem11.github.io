@@ -148,17 +148,28 @@ body {
   background-color: royalblue;
 }
 
-.labelVoornaam {
+.labelnaam {
   background-color: rgb(43, 43, 43);
   color: white;
   height: 30px;
-  width: 150px;
+  width: 15%;
   display: inline-block;
+  padding-left: 10px;
 }
 
 .naamen {
   width: 100%;
   height: auto;
-  margin-top: 10%;
-  margin-left: 10%;
+  padding-top: 3%;
+  padding-left: 5%;
+}
+
+.naam_contact {
+  width: 100%;
+  height: auto;
+}
+
+.invul_contact {
+  width: 70%;
+  margin-left: 5%;
 }
