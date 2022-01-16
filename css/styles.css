@@ -136,7 +136,7 @@ body {
 }
 
 .contactInvul {
-  background-color: red;
+  background-color: #dddcdc;
   height: 600px;
   width: auto;
 }
@@ -145,7 +145,7 @@ body {
   margin: auto;
   height: 100%;
   width: 60%;
-  background-color: royalblue;
+  background-color: #ff0000;
 }
 
 .labelnaam {
@@ -167,9 +167,33 @@ body {
 .naam_contact {
   width: 100%;
   height: auto;
+  margin-bottom: 10%;
 }
 
 .invul_contact {
   width: 70%;
   margin-left: 5%;
+}
+
+.textarea {
+  resize: none;
+}
+
+.checkbox_contact {
+  margin-left: 5%;
+}
+
+.submit_contact {
+  background-color: rgb(29, 170, 76);
+  color: white;
+  border: none;
+  height: 30px;
+  width: 15%;
+  cursor: pointer;
+}
+
+.rest_contact {
+  width: 100%;
+  height: auto;
+  background-color: #dddcdc;
 }
