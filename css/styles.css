@@ -113,8 +113,9 @@ body {
   padding-left: 70px;
   padding-top: 60px;
   width: 100%;
-  height: 800px;
-  background-color: #dddcdc;
+  height: auto;
+  background-image: url("/pictures/contact_image.jpg");
+  
 }
 
 .h1Contact {
@@ -136,7 +137,6 @@ body {
 }
 
 .contactInvul {
-  background-color: #dddcdc;
   height: 600px;
   width: auto;
 }
@@ -145,7 +145,6 @@ body {
   margin: auto;
   height: 100%;
   width: 60%;
-  background-color: #ff0000;
 }
 
 .labelnaam {
@@ -155,6 +154,13 @@ body {
   width: 15%;
   display: inline-block;
   padding-left: 10px;
+}
+
+.sendCopy {
+  height: auto;
+  flex-wrap: wrap;
+  width: auto;
+  padding-right: 10px;
 }
 
 .naamen {
@@ -192,8 +198,35 @@ body {
   cursor: pointer;
 }
 
-.rest_contact {
-  width: 100%;
-  height: auto;
-  background-color: #dddcdc;
+@media only screen and (max-width: 1200px) {
+  .invul {
+    align-items: center;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .invul{
+    align-items: center;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .invul {
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .invul {
+    align-items: center;
+    width: 100%;
+  }
+
+  .labelnaam {
+    flex-wrap: wrap;
+    
+  }
 }
