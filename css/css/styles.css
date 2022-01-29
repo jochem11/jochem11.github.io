@@ -1,0 +1,232 @@
+* {
+  font-family: "Baloo Paaji 2", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+.top_navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #323233;
+  box-shadow: 1px 0 2px rgba(0, 0, 0, 0.125);
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  z-index: 100;
+}
+
+.top_navbar .logo {
+  width: 250px;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 0 25px;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-right: 1px solid #f5f5f5;
+}
+
+.top_navbar .menu {
+  width: calc(100% - 250px);
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top_navbar .hamburger {
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.top_navbar .hamburger:hover {
+  color: #007dc3;
+}
+
+/* Now I have determined what the sidebar will look like for a responsive device */
+.hover_collapse .sidebar {
+  width: 70px;
+}
+
+.hover_collapse .sidebar ul li a .text {
+  display: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background: #042331;
+  z-index: 100;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 16px 25px;
+  border-bottom: 1px solid #03374e;
+  color: #0e94d4;
+}
+
+.sidebar ul li a .icon {
+  font-size: 18px;
+  color: white;
+  vertical-align: middle;
+}
+
+.sidebar ul li a .text {
+  margin-left: 19px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+.sidebar ul li a:hover {
+  background: #0e94d4;
+  color: #fff;
+}
+.flex {
+  display: flex;
+}
+
+.backgroundPicture_index {
+  padding-left: 70px;
+  padding-top: 60px;
+  opacity: 0.75;
+}
+
+.contactErea {
+  padding-left: 70px;
+  padding-top: 60px;
+  width: 100%;
+  height: auto;
+  background-image: url("/pictures/contact_image.jpg");
+  
+}
+
+.h1Contact {
+  font-size: 300%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.textContactErea {
+  height: auto;
+  flex-wrap: wrap;
+  width: 45%;
+  margin: auto;
+}
+
+.textContact {
+  font-size: 150%;
+  text-align: center;
+}
+
+.contactInvul {
+  height: 600px;
+  width: auto;
+}
+
+.invul {
+  margin: auto;
+  height: 100%;
+  width: 60%;
+}
+
+.labelnaam {
+  background-color: rgb(43, 43, 43);
+  color: white;
+  height: 30px;
+  width: 15%;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.sendCopy {
+  height: auto;
+  flex-wrap: wrap;
+  width: auto;
+  padding-right: 10px;
+}
+
+.naamen {
+  width: 100%;
+  height: auto;
+  padding-top: 3%;
+  padding-left: 5%;
+}
+
+.naam_contact {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10%;
+}
+
+.invul_contact {
+  width: 70%;
+  margin-left: 5%;
+}
+
+.textarea {
+  resize: none;
+}
+
+.checkbox_contact {
+  margin-left: 5%;
+}
+
+.submit_contact {
+  background-color: rgb(29, 170, 76);
+  color: white;
+  border: none;
+  height: 30px;
+  width: 15%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  .invul {
+    align-items: center;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .invul{
+    align-items: center;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .invul {
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .invul {
+    align-items: center;
+    width: 100%;
+  }
+
+  .labelnaam {
+    flex-wrap: wrap;
+    
+  }
+}
