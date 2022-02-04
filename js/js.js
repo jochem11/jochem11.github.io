@@ -29,3 +29,19 @@ li_items.forEach((li_item) => {
 hamburger.addEventListener("click", () => {
   hamburger.closest(".wrapper").classList.toggle("hover_collapse");
 });
+
+const elems = document.querySelectorAll(".skillss");
+const values = [85, 70, 10, 65, 50];
+
+elems.forEach((elem, index) => {
+  let width = 1;
+  const id = setInterval(frame, 10);
+  function frame() {
+    if (width >= values[index]) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + "%";
+    }
+  }
+});

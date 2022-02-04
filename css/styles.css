@@ -106,12 +106,6 @@ body {
   display: flex;
 }
 
-.backgroundPicture_index {
-  padding-left: 70px;
-  padding-top: 60px;
-  opacity: 0.75;
-}
-
 .contactErea {
   padding-left: 70px;
   padding-top: 60px;
@@ -259,6 +253,7 @@ body {
 
   .naamen label {
     width: 20%;
+    min-width: 85px;
     margin-bottom: 10px;
   }
 
@@ -282,6 +277,7 @@ body {
   min-height: 100vh;
   height: 100%;
   justify-content: space-around;
+  display: flex;
 }
 
 .skillsContainer .text {
@@ -289,7 +285,6 @@ body {
   margin-left: 60px;
   width: 40%;
   height: 70vh;
-  background-color: black;
   color: #f5f5f5;
 }
 
@@ -299,19 +294,18 @@ body {
 }
 
 .skillsContainer .skills {
-  background-color: black;
   width: 40%;
   height: 80vh;
+  max-height: 500px;
 }
 
 .skillsContainer .skills .skillbars {
-  height: 70%;
-  background-color: green;
+  height: 40%;
 }
 
 .skillsContainer .skills .skillbars .containerskills {
   width: 100%;
-  background-color: rgb(0, 183, 255);
+  background-color: black;
   height: 5px;
 }
 
@@ -323,10 +317,149 @@ body {
 
 .html {
   width: 100%;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 0, 0);
   height: 5px;
+}
+
+.CSS {
+  background-color: blue;
+}
+
+.JavaScript {
+  background-color: yellow;
+}
+
+.Java {
+  background-color: lightskyblue;
+}
+
+.Python {
+  background-color: limegreen;
 }
 
 .skillbars p {
   color: white;
+}
+
+.plaatjesSkills {
+  height: min-content;
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+}
+
+.plaatjesSkills img {
+  max-width: 50%;
+  height: 150px;
+}
+
+@media screen and (max-width: 850px) {
+  .skillsContainer {
+    flex-direction: column;
+  }
+  .skillsContainer .text {
+    margin-left: 0px;
+    height: min-content;
+    margin-bottom: 50px;
+    width: 60%;
+  }
+  .skillsContainer .skills {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .skillsContainer .text {
+    width: 80%;
+  }
+  .skillsContainer .skills {
+    width: 80%;
+  }
+  .plaatjesSkills {
+    width: 100%;
+    flex-direction: column;
+  }
+  .plaatjesSkills img {
+    margin: auto;
+  }
+}
+
+/*index*/
+.indexPlaatje {
+  background-image: url("/portfolio/pictures/index_background.jpg");
+}
+
+.pictureindex {
+  width: 600px;
+  height: auto;
+}
+
+.containerIndex {
+  padding-top: 60px;
+  padding-left: 70px;
+  height: auto;
+  width: auto;
+  display: flex;
+}
+
+.containerIndex .textIndex {
+  margin-top: 70px;
+  height: auto;
+  width: 50%;
+}
+
+.containerIndex .textIndex h1 {
+  display: flex;
+  color: lightskyblue;
+  justify-content: center;
+}
+
+.containerIndex .textIndex p {
+  display: flex;
+  font-size: 250%;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 850px) {
+  .containerIndex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pictureindex img {
+    margin: 20%;
+  }
+  .containerIndex .textIndex {
+    width: 100%;
+  }
+  .containerIndex .textIndex P {
+    font-size: 200%;
+  }
+}
+/*github page*/
+
+.containerGithub {
+  background-color: red;
+  padding-left: 70px;
+  padding-top: 60px;
+  height: 100vh;
+  width: 100%;
+}
+
+.containerProjects {
+  display: flex;
+  width: 80%;
+  min-height: 200px;
+  height: fit-content;
+  background-color: blue;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.containerProjects img {
+  justify-content: center;
 }
