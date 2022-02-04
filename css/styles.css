@@ -265,7 +265,7 @@ body {
 
 /*skills*/
 .skills_background {
-  background-image: url("./../pictures/skills_background.png");
+  background-image: url("../pictures/skills_background.png");
 }
 
 .skillsContainer {
@@ -386,7 +386,7 @@ body {
 
 /*index*/
 .indexPlaatje {
-  background-image: url("/portfolio/pictures/index_background.jpg");
+  background-image: url("../pictures/index_background.jpg");
 }
 
 .pictureindex {
