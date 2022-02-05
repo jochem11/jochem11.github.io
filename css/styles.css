@@ -137,13 +137,12 @@ body {
 }
 
 .contactInvul {
-  height: 600px;
+  height: 700px;
   width: auto;
 }
 
 .invul {
   margin: auto;
-  height: auto;
   width: 60%;
 }
 
@@ -260,6 +259,9 @@ body {
   .naamen input,
   .naamen textarea {
     width: 100%;
+  }
+  .contactInvul {
+    height: 800px;
   }
 }
 
@@ -438,12 +440,14 @@ body {
   }
 }
 /*github page*/
+.achtergrondplaatje_github {
+  background-image: url("../pictures/skills_background.png");
+}
 
 .containerGithub {
-  background-color: red;
   padding-left: 70px;
   padding-top: 60px;
-  height: 100vh;
+  height: min-content;
   width: 100%;
 }
 
@@ -453,13 +457,211 @@ body {
   min-height: 200px;
   height: fit-content;
   background-color: blue;
-  justify-content: center;
   align-items: flex-start;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
 }
 
-.containerProjects img {
+.containerGithub .linkjesGithub {
+  margin-left: 20%;
+  height: 100%;
+  flex-flow: column;
+}
+
+.pictures {
+  height: 300px;
+}
+
+.linkjesGithub h3 {
+  margin-top: 50%;
+  margin-bottom: 50%;
+}
+
+@media screen and (max-width: 850px) {
+  .containerProjects {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerGithub .linkjesGithub {
+    margin-left: 0%;
+  }
+  .linkjesGithub h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .containerProjects img {
+    height: 200px;
+  }
+}
+/*footer*/
+
+body {
+  background: #fcfcfc;
+  font-family: sans-serif;
+}
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100%;
+  padding-left: 70px;
+
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  text-decoration: none;
+  color: #fff;
+  border: 1.1px solid white;
+  padding: 5px;
+
+  border-radius: 50%;
+}
+.socials a i {
+  font-size: 1.1rem;
+  width: 20px;
+
+  transition: color 0.4s ease;
+}
+.socials a:hover i {
+  color: aqua;
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.footer-bottom p {
+  float: left;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom p a {
+  color: #44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+.footer-menu {
+  float: right;
+}
+.footer-menu ul {
+  display: flex;
+}
+.footer-menu ul li {
+  padding-right: 20px;
+  display: block;
+}
+.footer-menu ul li a {
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover {
+  color: #27bcda;
+}
+
+@media (max-width: 500px) {
+  .footer-menu ul {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+/*extra*/
+.backgroundimage_extra {
+  background-image: url("../pictures/skills_background.png");
+}
+
+.containerextra {
+  height: 100vh;
+  width: 100%;
+  padding-left: 70px;
+  padding-top: 60px;
+}
+
+.containerextra table {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  width: 80%;
+}
+
+.containerextra th,
+td {
+  background-color: white;
+}
+
+.containerextra thead tr th {
+  background-color: blue;
+  color: white;
+}
+
+.containerextra table thead :hover {
+  color: rgb(92, 92, 92);
+}
+
+.containerextra table tbody tr :hover {
+  background-color: greenyellow;
+  color: white;
+}
+
+.filmpie {
+  width: 60%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 500px) {
+  .filmpie {
+    height: 20%;
+  }
 }
